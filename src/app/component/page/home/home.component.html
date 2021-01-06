@@ -1,0 +1,21 @@
+<div class="home-page">
+  <app-greenhouse-card *ngFor="let greenhouse of result | keyvalue">
+    ID: {{greenhouse.key}}<br>
+    Temperature: {{greenhouse.value}}
+  </app-greenhouse-card>
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <div>
+      <label for="id">
+        Id
+      </label>
+      <input id="name" type="text" formControlName="id">
+    </div>
+    <div>
+      <label for="temperature">
+        Temperature
+      </label>
+      <input id="name" type="text" formControlName="temperature">
+    </div>
+    <button class="button" type="submit" style="vertical-align:middle">Send</button>
+  </form>
+</div>
