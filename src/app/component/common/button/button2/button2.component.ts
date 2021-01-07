@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { LoadingService } from '../../../../service/loading/loading.service';
 
 @Component({
   selector: 'app-button2',
@@ -12,10 +11,8 @@ export class Button2Component implements OnInit {
   @Input() icon: string = 'fab fa-angular';
   @Input() rounded: boolean = false;
 
-  loading: boolean = false;
 
-  constructor(private loadingService: LoadingService) {
-    this.loadingService.sharedLoading.subscribe(loading => this.loading = loading);
+  constructor() {
   }
 
   ngOnInit(): void {

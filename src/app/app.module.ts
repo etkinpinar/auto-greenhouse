@@ -16,7 +16,6 @@ import { FooterComponent } from './component/nav/footer/footer.component';
 import { Card1Component } from './component/common/card/card1/card1.component';
 import { Button1Component } from './component/common/button/button1/button1.component';
 import { Button2Component } from './component/common/button/button2/button2.component';
-import { SocialButtonComponent } from './component/common/button/social-button/social-button.component';
 import { LabelDataComponent } from './component/common/block/label-data/label-data.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import {GreenhouseCardComponent} from './component/common/card/greenhouse-card/greenhouse-card.component';
@@ -31,7 +30,6 @@ import { SocketIoConfig, SocketIoModule } from 'ngx-socket-io';
         Card1Component,
         Button1Component,
         Button2Component,
-        SocialButtonComponent,
         LabelDataComponent,
         GreenhouseCardComponent
     ],

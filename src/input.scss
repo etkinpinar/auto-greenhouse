@@ -30,10 +30,7 @@ input {
   transition: border-bottom-color 400ms ease-out;
 }
 
-input:focus {
-  border-color: var(--color);
-  border-bottom-width: 2px;
-}
+
 
 input[type=checkbox] {
   display: none;

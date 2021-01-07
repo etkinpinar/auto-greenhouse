@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ThemeService } from '../../../service/theme/theme.service';
-import { LoadingService } from '../../../service/loading/loading.service';
 
 @Component({
   selector: 'app-bottom-nav',
@@ -15,9 +14,7 @@ export class BottomNavComponent implements OnInit {
   constructor(
     private router: Router,
     private themeService: ThemeService,
-    private loadingService: LoadingService
   ) {
-    this.loadingService.sharedLoading.subscribe(loading => this.loading = loading);
   }
 
   ngOnInit(): void {
